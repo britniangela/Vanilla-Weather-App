@@ -19,17 +19,33 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1>
-          Orlando
-        </h1>
-        <form id="search-form">
-          <input
-            type="text"
-            placeholder="Enter city"
-            autocomplete="off"
-            id="search-city"
-          />
-        </form>
+        <div class="row">
+          <div class="col-6">
+            <h1>
+              Orlando
+            </h1>
+          </div>
+          <div class="col-6">
+            <form id="search-form">
+              <input
+                type="text"
+                placeholder="Enter city"
+                autocomplete="off"
+                id="search-city"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="submit"
+                id="search-city"
+              >
+                Search
+              </button>
+            </form>
+            <button class="btn btn-outline-secondary" id="current-location">
+              Current Location
+            </button>
+          </div>
+        </div>
         <ul>
           <li>
             Monday 4:42 PM
@@ -56,7 +72,8 @@
               </li>
             </ul>
           </div>
-           <div class="row">
+        </div>
+        <div class="row">
           <div class="col-2">
             Monday
             <div class="temperature">89°</div>
@@ -83,19 +100,18 @@
             <div class="emoji"><i class="fas fa-meteor"></i></div>
           </div>
         </div>
+        <script src="src/app.js"></script>
       </div>
     </div>
-   
-
-    <small>
-      <a
-        href="https://github.com/britniangela/Vanilla-Weather-App"
-        target="_blank"
-        >Open-Source Code</a
-      >
-      by Britni Burdette
-    </small>
-
-    <script src="src/app.js"></script>
+    <div id="source-code-link">
+      <small>
+        <a
+          href="https://github.com/britniangela/Vanilla-Weather-App"
+          target="_blank"
+          >Open-Source Code</a
+        >
+        by Britni Burdette
+      </small>
+    </div>
   </body>
 </html>
