@@ -14,6 +14,10 @@
       src="https://kit.fontawesome.com/9c5f457f0d.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
@@ -21,9 +25,18 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-6">
+            <span class="current-date"
+              ><h5><small>Monday, July 20, 2020 9:25 PM</small></h5></span
+            >
+
             <h1>
               Orlando
             </h1>
+            <p>
+              <i class="fas fa-sun"></i>87<span id="temperature-scale"
+                >°F | °C</span
+              >
+            </p>
           </div>
           <div class="col-6">
             <form id="search-form">
@@ -44,22 +57,6 @@
             <button class="btn btn-outline-secondary" id="current-location">
               Current Location
             </button>
-          </div>
-        </div>
-        <ul>
-          <li>
-            Monday 4:42 PM
-          </li>
-          <li>
-            Sunny
-          </li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <i class="fas fa-sun"></i>
-            87°F | °C
-          </div>
-          <div class="col-6">
             <ul>
               <li>
                 Precipitation: 15%
@@ -73,6 +70,7 @@
             </ul>
           </div>
         </div>
+
         <div class="row">
           <div class="col-2">
             Monday
@@ -81,12 +79,12 @@
           </div>
           <div class="col-2">
             Tueday
-            <div class="dtemperature">89°</div>
+            <div class="temperature">93°</div>
             <div class="emoji"><i class="fas fa-umbrella"></i></div>
           </div>
           <div class="col-2">
             Wednesday
-            <div class="dtemperature">89°</div>
+            <div class="temperature">89°</div>
             <div class="emoji"><i class="fas fa-rainbow"></i></div>
           </div>
           <div class="col-2">
