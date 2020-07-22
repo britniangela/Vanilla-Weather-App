@@ -76,17 +76,18 @@ function findLocation(position) {
 
 function getCurrentLocation() {
   navigator.geolocation.getCurrentPosition(findLocation);
+
+    function showCelciusTemp(event) {
+        event.preventDefault();
+        let fahrenheitTemperature = document.querySelector("#current-temperature");
+        let celciusTemperature = (fahrenheitTemperature − 32) * 5 / 9;
+        alert("celciusTemperature");
+
+    }
+
+    let currentLocation = document.querySelector("#current-location");
+    currentLocation.addEventListener("click", getCurrentLocation);
+
+    let celciusLink = document.querySelector("#celcius-link");
+    celciusLink.addEventListener("click", showCelciusTemp);
 }
-
-function showCelciusTemp(event) {
-  event.preventDefault();
-    let celciusTemperature = (87 − 32) * 5 / 9;
-    alert("celciusTemperature");
-
-}
-
-let currentLocation = document.querySelector("#current-location");
-currentLocation.addEventListener("click", getCurrentLocation);
-
-let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click", showCelciusTemp);
