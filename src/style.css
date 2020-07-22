@@ -20,8 +20,8 @@ ul,
 }
 
 h6,
-ul,
 h2,
+ul,
 .temperature {
   color: #6c7b95;
 }
@@ -29,13 +29,14 @@ h1,
 #day-of-week {
   color: #464159;
 }
+
 #current-location,
 #search-city {
   background-color: #6c7c95;
   color: #464159;
   text-decoration: none;
   transition: all 200ms ease-in-out;
-  box-shadow: rgba(37, 39, 89, 0.08) 0px 25px 25px 0;
+  box-shadow: 1px 1px 1px #464159;
 }
 #search-city:hover,
 #current-location:hover {
@@ -57,13 +58,20 @@ ul {
   margin: 75px auto;
   padding: 20px;
   border-radius: 8px;
-  background-color: #c7f0db;
+
+  background-image: linear-gradient(
+    -225deg,
+    #c7f0db 20%,
+    #8bbabb 45%,
+    #6c7b95 100%
+  );
 }
 .col-2 {
   border-radius: 8px;
   text-align: center;
   display: block;
   margin: 0 auto;
+  box-shadow: 2px 2px 2px #524c68;
 }
 .temperature {
   font-size: 35px;
@@ -83,8 +91,11 @@ ul {
   font-size: 15px;
 }
 #weather-icon {
-  color: #8bbabb;
+  color: #4cacad;
 }
 #current-temperature {
   font-size: 60px;
+}
+#day-of-week {
+  font-weight: 700;
 }
