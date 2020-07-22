@@ -38,7 +38,7 @@ function showCityTemp(response) {
   let temperature = Math.round(response.data.main.temp);
   let tempElement = document.querySelector("#current-temperature");
   tempElement.innerHTML = `${temperature}`;
-  let city = document.querySelector("#search-city").value;
+  let city = document.querySelector("#find-city").value;
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${city}`;
 }
@@ -46,7 +46,7 @@ function showCityTemp(response) {
 function getNewCity(event) {
   event.preventDefault();
   let apiKey = "80f827f1223261e54bfb7371ee94cdd0";
-  let city = document.querySelector("#search-city").value;
+  let city = document.querySelector("#find-city").value;
   let unit = "imperial";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
   axios.get(apiUrl).then(showCityTemp);

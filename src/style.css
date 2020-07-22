@@ -29,12 +29,25 @@ h1,
 #day-of-week {
   color: #464159;
 }
+#current-location,
+#search-city {
+  background-color: #6c7c95;
+  color: #464159;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 25px 25px 0;
+}
+#search-city:hover,
+#current-location:hover {
+  background: #99a9c4;
+}
 
 ul {
   list-style: none;
 
   padding: 10px;
 }
+
 .city {
   font-size: 50px;
 }
