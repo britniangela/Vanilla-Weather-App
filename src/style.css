@@ -1,6 +1,9 @@
 p {
   font-size: 40px;
 }
+ul {
+  list-style: none;
+}
 .weather-app {
   max-width: 700px;
   margin: 75px auto;

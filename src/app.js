@@ -1,5 +1,5 @@
 let now = new Date();
-let h5 = document.querySelector("h5");
+let h6 = document.querySelector("h6");
 
 let days = [
   "Sunday",
@@ -32,4 +32,4 @@ let hour = now.getHours();
 let minute = now.getMinutes();
 let year = now.getFullYear();
 
-h5.innerHTML = `${day}, ${month} ${date}, ${year} ${hour}:${minute}`;
+h6.innerHTML = `${day}, ${month} ${date}, ${year} ${hour}:${minute}`;
