@@ -9,6 +9,26 @@ ul,
 #source-code-link {
   font-family: "Sarala", sans-serif;
 }
+.weather-app,
+.col-2 {
+  border: 1.5px solid #464159;
+}
+#search-city,
+#current-location,
+#find-city {
+  border: 1px solid #464159;
+}
+
+h6,
+ul,
+p,
+.temperature {
+  color: #6c7b95;
+}
+h1,
+#day-of-week {
+  color: #464159;
+}
 
 p {
   font-size: 40px;
@@ -21,11 +41,10 @@ ul {
   max-width: 700px;
   margin: 75px auto;
   padding: 20px;
-  border: 1px solid black;
   border-radius: 8px;
+  background-color: #c7f0db;
 }
 .col-2 {
-  border: 1px solid black;
   border-radius: 8px;
   text-align: center;
   display: block;
@@ -45,4 +64,7 @@ ul {
 }
 #temperature-scale {
   font-size: 15px;
+}
+#weather-icon {
+  color: #8bbabb;
 }
