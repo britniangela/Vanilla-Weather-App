@@ -1,6 +1,6 @@
 h1,
 h6,
-p,
+h2,
 form,
 button,
 ul,
@@ -21,7 +21,7 @@ ul,
 
 h6,
 ul,
-p,
+h2,
 .temperature {
   color: #6c7b95;
 }
@@ -30,11 +30,13 @@ h1,
   color: #464159;
 }
 
-p {
-  font-size: 40px;
-}
 ul {
   list-style: none;
+
+  padding: 10px;
+}
+.city {
+  font-size: 50px;
 }
 
 .weather-app {
@@ -51,13 +53,15 @@ ul {
   margin: 0 auto;
 }
 .temperature {
-  font-size: 40px;
+  font-size: 35px;
 }
-.emoji {
-  font-size: 25px;
-}
+
 .fas {
-  font-size: 25px;
+  font-size: 30px;
+  padding: 5px;
+}
+.fa-sun {
+  font-size: 40px;
 }
 #source-code-link {
   text-align: center;
@@ -67,4 +71,7 @@ ul {
 }
 #weather-icon {
   color: #8bbabb;
+}
+#current-temperature {
+  font-size: 60px;
 }
