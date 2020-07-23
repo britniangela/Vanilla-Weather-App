@@ -49,6 +49,10 @@ ul {
   padding: 50px;
   text-align: center;
 }
+h2 {
+  font-size: 60px;
+  text-align: center;
+}
 
 .city {
   font-size: 50px;
@@ -83,22 +87,24 @@ ul {
   font-size: 30px;
   padding: 5px;
 }
-.fa-sun {
-  font-size: 40px;
-}
+
 #source-code-link {
   text-align: center;
 }
 #temperature-scale {
   font-size: 15px;
 }
+#current-weather-icon {
+  color: #4cacad;
+  font-size: 50px;
+}
 #weather-icon {
   color: #4cacad;
 }
-#current-temperature {
-  font-size: 60px;
-  text-align: center;
-}
+
 #day-of-week {
   font-weight: 700;
+}
+#current-temperature {
+  font-size: 60px;
 }
