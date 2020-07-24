@@ -81,8 +81,8 @@ function getCurrentLocation() {
 function showCelciusTemp(event) {
   event.preventDefault();
   let fahrenheitTemperature = document.querySelector("#current-temperature");
-  let celciusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
-  celciusTemperature.innerHTML = `${fahrenheitTemperature}`;
+  let celciusTemperature = ((fahrenheitTemperature.innerHTML - 32) * 5) / 9;
+  fahrenheitTemperature.innerHTML = `${fahrenheitTemperature}`;
 }
 
 let currentLocation = document.querySelector("#current-location");
