@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
 
     <title>Weather App</title>
   </head>
@@ -27,13 +28,13 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-6">
-            <span class="current-date"
-              ><h6><small>Monday, July 20, 2020 9:25 PM</small></h6></span
-            >
-
             <h1 class="city">
               Orlando
             </h1>
+            <h6 class="current-date">
+              <small>Monday, July 20, 2020 9:25 PM</small>
+            </h6>
+
             <h2>
               <span id="current-temperature">87</span>
               <span id="temperature-scale" class="units"
